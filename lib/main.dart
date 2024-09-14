@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           bodyMedium: TextStyle(fontSize: 16, color: Colors.black54),
         ),
       ),
-      home: AuthPage(),
+      home: const AuthPage(),
     );
   }
 }
@@ -58,7 +58,7 @@ class SignUpPage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   String? _username;
   String? _password;
-  bool _acceptTerms = false;
+  final bool _acceptTerms = false;
 
   SignUpPage({super.key});
 
